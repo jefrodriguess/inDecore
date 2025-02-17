@@ -1,0 +1,92 @@
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+
+/* ESTILO HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding: 10rem;
+}
+
+header .indecor-text h1 {
+    color: #1aa0e8;
+    padding-bottom: 2rem;
+}
+
+header .indecor-text h2 {
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+header .indecor-text span{
+    color: #1aa0e8;
+    font-weight: 600;
+}
+
+.formulario{
+    background-color: #c9ced1;
+    padding: 2rem ;
+
+}
+
+.formulario h2{
+    padding-bottom: 2rem;
+    font-weight: 500;
+}
+
+
+form p{
+    color: #636566;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+
+form input{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.3rem 11rem 0.3rem 0.3rem;
+    border-radius: 0.3rem;
+    border: 0;
+    outline: 0;
+}
+
+form .enviar{
+    display: flex;
+    text-align: center;
+    
+     
+}
+
+form .enviar input{
+    width: 100%;
+    background-color: #1aa0e8;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;  
+    border-radius: 0;
+
+}
+
+/* ESTILO APRENDER */
+
+.aprender-cinza{
+    width: 100%;
+    background-color:#c9ced1 ;
+    padding: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.aprender-img{
+    display: flex;
+}

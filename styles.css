@@ -5,88 +5,193 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
 }
+
+/* filter: brightness(0.3); */
 
 /* ESTILO HEADER */
 
 header{
+    min-height: 90vh; 
+    background-image: url("../img/hrz-5.jpg");
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    z-index: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo escura com opacidade */
+    z-index: -1; /* Garante que o texto fique em cima */
+}
+
+
+#inicio-site {
     display: flex;
     align-items: center;
-    gap: 10rem;
-    padding: 10rem;
+    justify-content: space-around;
+    gap: 3rem; 
+    padding: 8rem; 
 }
 
-header .indecor-text h1 {
+#inicio-site .indecor-text{
+    width: 20rem;
+}
+
+
+
+#inicio-site .indecor-text h1 {
     color: #1aa0e8;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem; 
 }
 
-header .indecor-text h2 {
-    padding-bottom: 2rem;
+#inicio-site .indecor-text h2 {
+    margin-bottom: 1rem; 
     text-transform: uppercase;
+    color: #fff;
 }
 
-header .indecor-text span{
+#inicio-site .indecor-text p{
+    color: #fff;
+}
+
+#inicio-site .indecor-text span{
     color: #1aa0e8;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-.formulario{
+#inicio-site .formulario{
     background-color: #c9ced1;
-    padding: 2rem ;
-
+    padding: 2rem;
+    width: 30rem;
 }
 
-.formulario h2{
-    padding-bottom: 2rem;
+#inicio-site .formulario h2{
+    margin-bottom: 2rem; 
     font-weight: 500;
 }
 
-
 form p{
     color: #636566;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 0.3rem;
 }
-
 
 form input{
     width: 100%;
     margin-bottom: 1rem;
-    padding: 0.3rem 11rem 0.3rem 0.3rem;
+    padding: 0.5rem; 
     border-radius: 0.3rem;
     border: 0;
     outline: 0;
 }
 
-form .enviar{
+.enviar { 
     display: flex;
-    text-align: center;
-    
-     
+    justify-content: center;
 }
 
 form .enviar input{
     width: 100%;
+    padding: 1rem;
     background-color: #1aa0e8;
     color: #fff;
     text-transform: uppercase;
-    cursor: pointer;  
+    cursor: pointer;
     border-radius: 0;
-
 }
 
 /* ESTILO APRENDER */
 
 .aprender-cinza{
+    font-size: 1.5rem;
     width: 100%;
-    background-color:#c9ced1 ;
-    padding: 3rem;
+    font-weight: bold;
+    padding: 3rem; 
+    background-color:#c9ced1;
     text-align: center;
-    font-weight: 700;
 }
 
-.aprender-img{
+.aprender-blocos {
+    display: flex; /* Ativa o Flexbox no contêiner */
+    justify-content: space-around; /* Distribui os blocos igualmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 2rem; /* Espaçamento entre os blocos */
+}
+
+.aprender-bloco {
+    display: flex; /* Flexbox para o bloco individual */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    width: 400px; /* Largura fixa para os blocos (ajuste conforme necessário) */
+    padding: 3rem;
+}
+
+.aprender-bloco img {
+    width: 225px; /* Largura do círculo */
+    height: 225px; /* Altura do círculo */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    object-fit: cover; /* Mantém a proporção da imagem dentro do círculo */
+    margin-bottom: 1rem; /* Espaçamento entre a imagem e o texto */
+}
+
+#local{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    background-image: url("../img/hrz-1.jpg");
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    z-index: 0;
+    
+}
+
+#local::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo escura com opacidade */
+    z-index: -1; /* Garante que o texto fique em cima */
+}
+
+
+.local-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.local-icon i{
+    color: #1aa0e8;
+    font-size: 3rem;
+}
+
+.local-icon p{
+    color: #fff;
+    flex-direction: column;
+}
+
+.local-text{
+    width: 480px;
+}
+
+.local-text h1{
+    color: #1aa0e8;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.local-text p{
+    color: #fff;
 }

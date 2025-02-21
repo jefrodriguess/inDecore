@@ -1,3 +1,10 @@
+:root {
+    --main-color:#33b5fc;
+    --primary-text-color:#fff;
+    --secondary-color:#b4bbbe;
+}
+
+
 /* ESTILO GERAL */
 
 * {
@@ -7,7 +14,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* filter: brightness(0.3); */
 
 /* ESTILO HEADER */
 
@@ -47,27 +53,27 @@ header::before {
 
 
 #inicio-site .indecor-text h1 {
-    color: #1aa0e8;
+    color: var(--main-color);
     margin-bottom: 2rem; 
 }
 
 #inicio-site .indecor-text h2 {
     margin-bottom: 1rem; 
     text-transform: uppercase;
-    color: #fff;
+    color: var(--primary-text-color);
 }
 
 #inicio-site .indecor-text p{
-    color: #fff;
+    color: var(--primary-text-color);
 }
 
 #inicio-site .indecor-text span{
-    color: #1aa0e8;
+    color: var(--main-color);
     font-weight: bold;
 }
 
 #inicio-site .formulario{
-    background-color: #c9ced1;
+    background-color: var(--secondary-color);
     padding: 2rem;
     width: 30rem;
 }
@@ -78,7 +84,7 @@ header::before {
 }
 
 form p{
-    color: #636566;
+    color: var(--secondary-color);
     font-weight: bold;
     margin-bottom: 0.3rem;
 }
@@ -92,6 +98,16 @@ form input{
     outline: 0;
 }
 
+.selecionar {
+    position: relative;
+}
+
+.selecionar i{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
 .enviar { 
     display: flex;
     justify-content: center;
@@ -100,8 +116,8 @@ form input{
 form .enviar input{
     width: 100%;
     padding: 1rem;
-    background-color: #1aa0e8;
-    color: #fff;
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 0;
@@ -114,7 +130,7 @@ form .enviar input{
     width: 100%;
     font-weight: bold;
     padding: 3rem; 
-    background-color:#c9ced1;
+    background-color:var(--secondary-color);
     text-align: center;
 }
 
@@ -142,11 +158,15 @@ form .enviar input{
     margin-bottom: 1rem; /* Espaçamento entre a imagem e o texto */
 }
 
+
+/* ESTILO LOCAL DO ENVENTO  */
+
+
 #local{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 25vh;
+    height: 40vh;
     background-image: url("../img/hrz-1.jpg");
     background-size: cover; 
     background-position: center; 
@@ -166,20 +186,21 @@ form .enviar input{
     z-index: -1; /* Garante que o texto fique em cima */
 }
 
-
 .local-icon{
     display: flex;
-    flex-direction: column;
+    gap: 2rem;
+    /* flex-direction: column; */
 }
 
 .local-icon i{
-    color: #1aa0e8;
+    color: var(--secondary-color);
     font-size: 3rem;
 }
 
-.local-icon p{
-    color: #fff;
+.local-icon-text{
+    color: var(--primary-text-color);
     flex-direction: column;
+    text-align: center;
 }
 
 .local-text{
@@ -187,11 +208,111 @@ form .enviar input{
 }
 
 .local-text h1{
-    color: #1aa0e8;
+    font-size: 2rem;
+    color: var(--main-color);
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
 
 .local-text p{
-    color: #fff;
+    color: var(--primary-text-color); 
+}
+
+
+/* ESTILO AMBIENTES  */
+.ambiente{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 3rem 6rem;
+}
+
+.ambiente img{
+    width: 50%;
+}
+
+.ambiente h2{
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+.ambiente-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.ambiente-text span{
+    font-weight: bold;
+}
+
+/* ESTILO INSCRIÇÕES */
+
+#inscricao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background-image: url("img/hrz-6.jpg");
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    z-index: 0;
+    
+}
+
+#inscricao::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo escura com opacidade */
+    z-index: -1; /* Garante que o texto fique em cima */
+}
+
+.inscricao h1{
+    color: var(--primary-text-color);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao a{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #1aa0e8c5;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0; 
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ESTILO RODAPÉ */
+
+.rodape-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 3rem;
+}
+
+.rodape-text h1{
+    margin-bottom: 1rem;
+}
+
+.rodape-text-bold{
+    margin-top: 1rem;
+}
+
+.rodape-text-bold span{
+    font-weight: bold;
 }

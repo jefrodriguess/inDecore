@@ -39,7 +39,10 @@
             <p>Telefone:</p>
             <input type="text" placeholder="Numero de Whatsapp" required />
             <p>Pricipal interesse:</p>
-            <input type="text" placeholder="" required />
+            <div class="selecionar">
+              <input type="button" placeholder="Selecione" />
+              <i class="bi bi-chevron-down"></i>
+            </div> 
             <div class="enviar">
               <input type="submit" value="Quero me inscrever" />
             </div>
@@ -73,9 +76,11 @@
       <section id="local">
         <div class="local-icon">
           <i class="bi bi-geo-alt-fill"></i>
-          <p>Rua do evento, 1333</p>
-          <p>Bairro</p>
-          <p>Abertura 14h</p>
+          <div class="local-icon-text">
+            <p>Rua do evento, 1333</p>
+            <p>Bairro</p>
+            <p>Abertura 14h</p>
+          </div>
         </div>
 
         <div class="local-text">
@@ -88,52 +93,53 @@
         </div>
       </section>
 
-      <section class="ambientes">
-        <div class="ambiente1">
+      <section id="ambientes">
+        <div class="ambiente">
           <img src="img/hrz-3.jpg" alt="sala iluminada" />
           <h1>Conheca os ambientes que você vai aprender a decorar</h1>
         </div>
-        <div class="ambiente2">
-          <h2>Detalhes</h2>
-          <ul>
+        <div class="ambiente">
+          <div class="ambiente-text">
+            <h2>Detalhes</h2>
             <li>Posicionamento</li>
             <li>Apoveitamento de espaço</li>
             <li>Combinação de cores</li>
             <li>Organização</li>
             <li><span>E muito mais...</span></li>
-          </ul>
-          <img src="img/hrz-3.jpg" alt="sala de jantar" />
+          </div>
+          <img src="img/hrz-4.jpg" alt="sala de jantar" />
         </div>
-        <div class="ambiente3">
+        <div class="ambiente">
           <img src="img/hrz-5.jpg" alt="sala" />
-          <h2>Objetos</h2>
-          <ul>
+          <div class="ambiente-text">
+            <h2>Objetos</h2>
             <li>Cadeiras</li>
             <li>Mesas</li>
             <li>Espelhos</li>
             <li>Cortinas</li>
             <li><span>E muito mais...</span></li>
-          </ul>
+          </div>
         </div>
       </section>
 
-      <section class="inscricao">
-        <div>
-          <img src="img/hrz-6.jpg" alt="sala clara" />
+      <section id="inscricao">
+        <div class="inscricao">
           <h1>Gostou? Então se inscreva:</h1>
-          <form action="">
-            <div><input type="submit" value="Solicitar Inscrição" /></div>
-          </form>
+          <div class="botao">
+            <a href="">Solicitar inscrição</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
+      <div class="rodape-text">
         <h1>InDecor</h1>
         <p>A evolução da decoração de interiores</p>
-        <p><span>Entre em contato: </span>oi@indecor.com.br</p>
-        <p><span>Ou pelo telefone: </span>(55)99990-9999</p>
+        <div class="rodape-text-bold">
+          <p><span>Entre em contato: </span>oi@indecor.com.br</p>
+          <p><span>Ou pelo telefone: </span>(55)99990-9999</p>
+        </div>
       </div>
     </footer>
   </body>

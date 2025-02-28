@@ -237,10 +237,9 @@ form .enviar input{
 }
 
 .ambiente-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
+    width: 50%;
+}                                                                                                                                                                                                                                                                                    
+
 .ambiente-text span{
     font-weight: bold;
 }

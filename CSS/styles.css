@@ -49,11 +49,9 @@ header::before {
 }
 
 #inicio-site .indecor-text{
-    width: 27rem;
-    font-size: 22px;
+    /* width: 27rem; */
+    font-size: 30px;
 }
-
-
 
 #inicio-site .indecor-text h1 {
     color: var(--main-color);
@@ -80,22 +78,25 @@ header::before {
 #inicio-site .formulario{
     background-color: var(--secondary-color);
     padding: 2rem;
-    width: 30rem;
+    width: 40rem;
 }
 
 #inicio-site .formulario h2{
     margin-bottom: 2rem; 
     font-weight: 500;
+    font-size: 2.3rem;
 }
 
 form p{
     color: var(--text-tertiary);
     font-weight: bold;
+    font-size: 1.5rem;
     margin-bottom: 0.3rem;
 }
 
 form input{
     width: 100%;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 0.5rem; 
     border-radius: 0.3rem;
@@ -105,12 +106,14 @@ form input{
 
 .selecionar {
     position: relative;
+    
 }
 
 .selecionar i{
     position: absolute;
     top: 6px;
     right: 10px;
+    font-size: 2rem;
 }
 
 .enviar { 
@@ -131,7 +134,7 @@ form .enviar input{
 /* ESTILO APRENDER */
 
 .aprender-cinza{
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
     padding: 3rem; 
     background-color:var(--secondary-color);
@@ -142,7 +145,6 @@ form .enviar input{
     display: flex; /* Ativa o Flexbox no contêiner */
     justify-content: space-around; /* Distribui os blocos igualmente */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    
 }
 
 .aprender-bloco {
@@ -150,19 +152,22 @@ form .enviar input{
     flex-direction: column; /* Organiza os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
     text-align: center; /* Centraliza o texto */
-    width: 300px; /* Largura fixa para os blocos (ajuste conforme necessário)  */
-    padding: 4rem;
-    
+    width: 15rem; /* Largura fixa para os blocos (ajuste conforme necessário)  */
+    padding: 4rem;   
 }
 
 .aprender-bloco img {
-    width: 235px; /* Largura do círculo */
-    height: 235px; /* Altura do círculo */
+    width: 29rem; /* Largura do círculo */
+    height: 29rem; /* Altura do círculo */
     border-radius: 50%; /* Transforma a imagem em um círculo */
     object-fit: cover; /* Mantém a proporção da imagem dentro do círculo */
     margin-bottom: 1rem; /* Espaçamento entre a imagem e o texto */
 }
 
+.aprender-bloco p{
+    font-size: 2rem;
+    width: 30rem;
+}
 
 /* ESTILO LOCAL DO ENVENTO  */
 
@@ -177,7 +182,6 @@ form .enviar input{
     background-position: center; 
     position: relative;
     z-index: 0;
-    
 }
 
 #local::before {
@@ -193,33 +197,36 @@ form .enviar input{
 
 .local-icon{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
+    align-items: center;
 }
 
 .local-icon i{
     color: var(--main-color);
-    font-size: 3rem;
+    font-size: 8rem;
 }
 
 .local-icon-text{
     color: var(--primary-text-color);
     flex-direction: column;
     text-align: center;
+    font-size: 2rem;
 }
 
 .local-text{
-    width: 480px;
+    width: 50rem;
 }
 
 .local-text h1{
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--main-color);
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
 
 .local-text p{
-    color: var(--primary-text-color); 
+    color: var(--primary-text-color);
+    font-size: 1.7rem; 
 }
 
 
@@ -229,6 +236,11 @@ form .enviar input{
     gap: 3rem;
     justify-content: space-between;
     margin: 3rem 6rem;
+    align-items: center;
+}
+
+.ambiente h1{
+    font-size: 4rem;
 }
 
 .ambiente img{
@@ -238,12 +250,13 @@ form .enviar input{
 .ambiente h2{
     padding-bottom: 2rem;
     font-weight: 600;
+    font-size: 4rem;
 }
 
 .ambiente-text{
     width: 50%;
-}                                                                                                                                                                                                                                                                                    
-
+    font-size: 2rem;
+}                                                                 
 .ambiente-text span{
     font-weight: bold;
 }
@@ -260,7 +273,6 @@ form .enviar input{
     background-position: center; 
     position: relative;
     z-index: 0;
-    
 }
 
 #inscricao::before {
@@ -278,6 +290,7 @@ form .enviar input{
     color: var(--primary-text-color);
     margin-bottom: 2rem;
     font-weight: 500;
+    font-size: 3rem;
 }
 
 .botao{
@@ -296,7 +309,9 @@ form .enviar input{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.8rem;
 }
+
 
 /* ESTILO RODAPÉ */
 
@@ -310,10 +325,19 @@ form .enviar input{
 
 .rodape-text h1{
     margin-bottom: 1rem;
+    font-size: 3rem;
 }
 
+.rodape-text p{
+    font-size: 2rem;
+
+}
 .rodape-text-bold{
     margin-top: 1rem;
+}
+
+.rodape-text-bold p{
+    font-size: 1.5rem;
 }
 
 .rodape-text-bold span{
@@ -332,7 +356,7 @@ form .enviar input{
         font-size: 1rem;
     }
     
-    /* INICIO DO SITE */
+/* INICIO DO SITE */
     #inicio-site{
         display: flex;
         flex-direction: column;
@@ -340,72 +364,142 @@ form .enviar input{
         max-width: 100%;
         padding: 8rem 4rem;
     }
-
-    #inicio-site .indecor-text{
-        margin-left:  7.5rem;
-
-    }
     
     #inicio-site .indecor-text h1{
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
     #inicio-site .indecor-text h2{
-        font-size: 1rem;
+        font-size: 2rem;
         width: 20rem;
+
     }
     #inicio-site .indecor-text p{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
-    /* FORMULÁRIO */
+/* FORMULÁRIO */
 
     #inicio-site .formulario{
         background-color: var(--secondary-color);
         padding: 2rem;
         width: 20rem;
     }
+    
+    #inicio-site .formulario h2{
+        margin-bottom: 2rem; 
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    
+    form p{
+        color: var(--text-tertiary);
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    form input{
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem; 
+        border-radius: 0.3rem;
+        border: 0;
+        outline: 0;
+    }
+    
+    .selecionar {
+        position: relative;
+        
+    }
+    
+    .selecionar i{
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        font-size: 1rem;
+    }
+    
 
-    /* APRENDER  */
+/* APRENDER  */
 
     #aprender .aprender-blocos{
         display: flex;
         flex-direction: column;
     }
 
-    /* LOCAL  */
+    .aprender-cinza{
+        font-size: 1.5rem;
+        
+    }
+    
+    .aprender-bloco {
+        display: flex; /* Flexbox para o bloco individual */
+        flex-direction: column; /* Organiza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        width: 20rem; /* Largura fixa para os blocos (ajuste conforme necessário)  */   
+    }
+    
+    .aprender-bloco img {
+        width: 20rem; /* Largura do círculo */
+        height: 20rem; /* Altura do círculo */
+        
+    }
+
+    .aprender-bloco p{
+        font-size: 1.2rem;
+        width: 20rem;
+    }
+
+/* LOCAL  */
 
     #local{
         display: flex;
         flex-direction: column;
     }
-
-    #local .local-icon{
-        display: flex;
-        gap: 0.8rem;
+    
+    .local-icon{
+        gap: 1.5rem;
+        align-items: center;
+        margin-bottom: -4rem;
     }
     
-    #local .local-text{
+    .local-icon i{
+        font-size: 3rem;
+    }
+    
+    .local-icon-text{
+        font-size: 1rem;
+    }
+    
+    .local-text{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: -3rem;
+        width: 25rem;
         
     }
         
+    .local-text h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
 
-    #local .local-text p{
+    .local-text p{
         font-size: 0.8rem;
         width: 25rem;
         text-align: center;
+        
     }
+    
 
-
-        /* ESTILO AMBIENTES  */
+/* ESTILO AMBIENTES  */
     .ambiente{
         display: flex;
         flex-direction: column;
-        margin: 3rem 6rem;
+        margin: 1.5rem 3rem;
     }
 
     .ambiente img{
@@ -414,89 +508,47 @@ form .enviar input{
     
     }
 
+    .ambiente h1{
+        font-size: 2rem;
+    }
+
     .ambiente h2{
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         font-weight: 600;
+        font-size: 1.5rem;
     }
 
     .ambiente-text{
         width: 100%;
-    }                                                                                                                                                                                                                                                                                    
+        font-size: 0.9rem;
+    }     
 
-    .ambiente-text span{
-        font-weight: bold;
-    }
-
-    /* ESTILO INSCRIÇÕES */
-
-    #inscricao{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 30vh;
-        background-image: url("img/hrz-6.jpg");
-        background-size: cover; 
-        background-position: center; 
-        position: relative;
-        z-index: 0;
-        
-    }
-
-    #inscricao::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo escura com opacidade */
-        z-index: -1; /* Garante que o texto fique em cima */
-    }
+/* ESTILO INSCRIÇÕES */
 
     .inscricao h1{
-        color: var(--primary-text-color);
-        margin-bottom: 2rem;
-        font-weight: 500;
-    }
-
-    .botao{
-        display: flex;
-        justify-content: center;
+        font-size: 1.5rem;
     }
 
     .botao a{
-        width: 100%;
-        padding: 0.5rem;
-        background-color: #1aa0e8c5;
-        color: var(--primary-text-color);
-        text-transform: uppercase;
-        cursor: pointer;
-        border-radius: 0; 
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
+       font-size: 1.3rem;
     }
 
-    /* ESTILO RODAPÉ */
+/* ESTILO RODAPÉ */
 
     .rodape-text{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: var(--secondary-color);
         padding: 3rem;
+       
     }
 
     .rodape-text h1{
         margin-bottom: 1rem;
+        font-size: 2rem;
     }
 
-    .rodape-text-bold{
-        margin-top: 1rem;
+    .rodape-text p{
+        font-size: 1.2rem;
     }
 
-    .rodape-text-bold span{
-        font-weight: bold;
+    .rodape-text-bold p{
+       font-size: 1rem;
     }
-}
-    
